@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import MainPage from './pages/mainPage'
 import LogisticRegression from './pages/projects/logisticRegression'
+import Home from "./pages/home"
 class App extends Component {
   render() {
     return (
-      <LogisticRegression/>
+      <Home/>
     );
   }
 }
