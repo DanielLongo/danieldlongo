@@ -10,11 +10,11 @@ class MainMenu extends Component {
 				<Menu
 				mode="horizontal"
 				>
-					<Menu.Item key="about"> About </Menu.Item>
-					<Menu.Item class="mainMenuItem" key="projects"> Projects </Menu.Item>
+					<Menu.Item key="about"> <a href="#about">About</a></Menu.Item>
+					<Menu.Item class="mainMenuItem" key="projects"> <a href="#projects">Projects</a> </Menu.Item>
 				{/* need to center Menu Items */}
-					<Menu.Item key="visuals"> Visuals </Menu.Item>
-					<Menu.Item key="contact"> Contact </Menu.Item>
+					<Menu.Item key="visuals"> <a href="#visuals">Visuals</a> </Menu.Item>
+					<Menu.Item key="contact"> <a href="#contact">Contact</a> </Menu.Item>
 				</Menu>
 			</div>
 		)
