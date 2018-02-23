@@ -58,7 +58,7 @@ class LogisticRegression extends Component {
 						<p>Next define sigmoid and our loss function</p>
 						<pre>code: loss function and sigmoid</pre>
 						<p>Propagate handles the foward pass following the equation wx + b. First take the dot product of w and x, and then add b. 
-						This will return an array (number examples,1) which we will pass through <b>sigmoid</b>
+						This will return an array (number examples,1) which we will pass through <b>sigmoid</b></p>
 					</div>
 				</body>
 			</div>)
