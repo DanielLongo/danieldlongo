@@ -21,31 +21,6 @@ class Projects extends Component {
 		console.log("cards here b:")
 		console.log(this.projectCards)
 	}
-	// renderProjectCards() {
-	// 	let projectCards =  (
-	// 		<Row type="flex" gutter={10}>
-	// 			{this.state.projects.map((project, index) => {
-	// 				let cur_projectName = project["projectName"]
-	// 				let cur_info = project["info"]
-	// 				let cur_id = project["id"];
-	// 				if ((index + 1) > this.state.cardsPerRow) {
-	// 					return;
-	// 				}
-	// 				return (
-	// 					<div key={index}>
-	// 						<Col key={index} span={20}>
-	// 						<Card key={index} title={cur_projectName}>
-	// 							{cur_info}
-	// 						</Card>
-	// 						</Col>
-	// 					</div>
-	// 				);
-	// 			})}
-	// 		</Row>
-	// 	)
-	// 	return projectCards;
-	// }
-
 	renderProjectCards() {
 		let projectCards =  (
 			<Row type="flex" gutter={10}>
@@ -58,9 +33,21 @@ class Projects extends Component {
 					}
 					return (
 						<div key={index}>
-							<Card style={{width:250,height:200}}className="projectCard" key={index} title={cur_projectName}>
-								{cur_info}
-							</Card>
+					{/* for horizontal flip flip-container vertical*/}
+						<div class="flip-container " ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<Card style={{width:250,height:200}} className="projectCard" key={index} title={cur_projectName}>
+										{"background image"}
+									</Card>
+								</div>
+								<div class="back">
+									<Card style={{width:250,height:200}} className="projectCard" key={index}>
+										{cur_info}
+									</Card>
+								</div>
+							</div>
+						</div>
 						</div>
 					);
 				})}
@@ -68,6 +55,29 @@ class Projects extends Component {
 		)
 		return projectCards;
 	}
+
+	// renderProjectCards() {
+	// 	let projectCards =  (
+	// 		<Row type="flex" gutter={10}>
+	// 			{this.state.projects.map((project, index) => {
+	// 				let cur_projectName = project["projectName"]
+	// 				let cur_info = project["info"]
+	// 				let cur_id = project["id"];
+	// 				if ((index + 1) > this.state.cardsPerRow) {
+	// 					return;
+	// 				}
+	// 				return (
+	// 					<div key={index}>
+	// 						<Card style={{width:250,height:200}} className="projectCard" key={index} title={cur_projectName}>
+	// 							{cur_info}
+	// 						</Card>
+	// 					</div>
+	// 				);
+	// 			})}
+	// 		</Row>
+	// 	)
+	// 	return projectCards;
+	// }
 
 
 	render() {
