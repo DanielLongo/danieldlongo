@@ -13,7 +13,7 @@ class MainPage extends Component {
 				<Name/>
 				<MainMenu/>
 				<About/>
-			
+				<Projects/>
 				<Visuals/>
 				<Contact/>
 			</div>)
