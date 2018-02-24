@@ -122,7 +122,10 @@
  /*not working, need to set size of cards TODODODO*/
   .projectCard{
   	color: red;
-  	margin-left: 3%
+  	/*SIZE HERE*/
+  	width: 250px;
+  	height: 200px;
+  	margin-left: 4%;
   }
 
 
@@ -155,13 +158,16 @@
 	}
 
 .flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
+	/*SIZE HERE*/
+	/*margin-left: 10%;*/
+	width: 250px; 
+	height: 200px;
+	/*margin-left: 4%;*/
 }
 
 /* flip speed goes here */
 .flipper {
-	transition: 0.6s;
+	transition: 0.3s;
 	transform-style: preserve-3d;
 
 	position: relative;
