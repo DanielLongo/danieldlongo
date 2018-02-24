@@ -61,3 +61,73 @@
 .indent {
 	margin-left: 3%;
 }
+
+.mainView {
+	margin-bottom: 1.5%
+}
+
+ /*https://answers.squarespace.com/questions/135958/how-can-i-create-a-bouncing-down-arrow.html*/
+
+.nameArrow {
+	/*height: 452vh; */
+	/*width: 25vw;*/
+	/*width and height and location not workin TODOTODOTODOTODOTODO*/
+	color: white;
+}
+ 
+/*keeps arrow white even when clicked*/
+.nameArrow:hover { 
+	color:white;
+}
+
+.bounce {
+    position:fixed;
+    left:50%;
+    bottom:0;
+    margin-top:-25px;
+    margin-left:-25px;
+    height:50px;
+    width:50px;
+    /*background:red;*/
+    -webkit-animation:bounce 1s infinite;
+    -moz-animation:bounce 1s infinite;
+    -o-animation:bounce 1s infinite;
+    animation:bounce 1s infinite;
+    
+  }
+  
+  @-webkit-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-moz-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @-o-keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+  
+   @keyframes bounce {
+    0%       { bottom:0px; }
+    50%      { bottom:15px; }
+    100%     {bottom:30;}
+  }
+ /*not working, need to set size of cards TODODODO*/
+  .projectCard{
+  	color: red;
+  	margin-left: 3%
+  }
+
+
+
+
+
+
+

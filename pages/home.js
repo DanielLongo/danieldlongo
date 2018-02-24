@@ -8,14 +8,15 @@ import MainMenu from "..//components/mainMenu.js"
 
 class MainPage extends Component {
 	render() {
+		console.log("HERERERE")
 		return (
 			<div>
 				<Name/>
 				<MainMenu/>
 				<About/>
-				<Projects/>
-				<Visuals/>
-				<Contact/>
+				<Projects className="mainView"/>
+				<Visuals className="mainView"/>
+				<Contact className="mainView"/>
 			</div>)
 	}
 }

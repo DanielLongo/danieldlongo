@@ -1,12 +1,16 @@
 import React, {Component} from 'react';
 import { Menu, Icon } from 'antd';
+import { Anchor } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
+// flipping cards https://davidwalsh.name/css-flip
+
 class MainMenu extends Component {
 	render() {
-		return(
+		return(	
 			<div>
+				<Anchor>
 				<Menu
 				mode="horizontal"
 				>
@@ -16,6 +20,7 @@ class MainMenu extends Component {
 					<Menu.Item key="visuals"> <a href="#visuals">Visuals</a> </Menu.Item>
 					<Menu.Item key="contact"> <a href="#contact">Contact</a> </Menu.Item>
 				</Menu>
+				</Anchor>
 			</div>
 		)
 	}

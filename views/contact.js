@@ -2,12 +2,15 @@ import React, {Component} from 'react';
 import {Icon} from 'antd';
 import '../App.css'
 import ScrollableAnchor from "react-scrollable-anchor"
-
+import { configureAnchors } from "react-scrollable-anchor"
+import { removeHash } from 'react-scrollable-anchor'
+configureAnchors({offset: -45, scrollDuration: 500})
+removeHash()
 class Contact extends Component {
 	render() {
 		return(
 			<ScrollableAnchor id={"contact"}>
-			<div>
+			<div style={{marginBottom:"100%"}} className="mainView">
 				<h2> Let's Get in Touch </h2>
 				<div style={{marginLeft:"1%"}}>
 					<Icon type="mail" /><a href="mailto:Danieldominiclongo@gmail.com"> Danieldominiclongo@gmail.com</a>
