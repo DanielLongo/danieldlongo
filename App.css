@@ -125,10 +125,15 @@
   	/*SIZE HERE*/
   	width: 250px;
   	height: 200px;
-  	margin-left: 4%;
   }
 
+.projectCardImage {
+  /*same width as projectCard*/
+  width: 249px;
+  max-height: 143px;
+  margin: 0 auto;
 
+}
 
 /*https://davidwalsh.name/css-flip*/
 
@@ -162,12 +167,11 @@
 	/*margin-left: 10%;*/
 	width: 250px; 
 	height: 200px;
-	/*margin-left: 4%;*/
+	margin-bottom: 10px;
 }
-
 /* flip speed goes here */
 .flipper {
-	transition: 0.3s;
+	transition: .5s;
 	transform-style: preserve-3d;
 
 	position: relative;
