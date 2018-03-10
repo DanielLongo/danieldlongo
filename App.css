@@ -1,5 +1,12 @@
 @import '~antd/dist/antd.css';
 
+:root {
+  --project-card-width: 350px;
+  --project-card-height: 300px;
+  /*-1 and -57*/
+  --project-card-image-width: 349px;
+  --project-card-image-height: 243px; 
+}
 /* Container holding the image and the text in Name*/
 .container {
     position: relative;
@@ -59,7 +66,12 @@
 }
 
 .indent {
+  margin-top: 2%;
 	margin-left: 3%;
+}
+
+.lilIndent {
+  margin-left: 1%;
 }
 
 .mainView {
@@ -123,16 +135,25 @@
   .projectCard{
   	color: red;
   	/*SIZE HERE*/
-  	width: 250px;
-  	height: 200px;
+    width: var(--project-card-width);
+    height: var(--project-card-height);
+  	/*width: 250px;*/
+  	/*height: 200px;*/
   }
 
 .projectCardImage {
   /*same width as projectCard*/
-  width: 249px;
-  max-height: 143px;
+  /*width is one less than actual*/
+  width: var(--project-card-image-width);
+  max-height: var(--project-card-image-height);  
+  /*max-height is 57 less than card height*/
   margin: 0 auto;
 
+}
+
+.projectCardDescription {
+  font-size: 20px;
+  color: black;
 }
 
 /*https://davidwalsh.name/css-flip*/
@@ -165,8 +186,10 @@
 .flip-container, .front, .back {
 	/*SIZE HERE*/
 	/*margin-left: 10%;*/
-	width: 250px; 
-	height: 200px;
+  width: var(--project-card-width);
+  height: var(--project-card-height);
+/*	width: 250px; 
+	height: 200px;*/
 	margin-bottom: 10px;
 }
 /* flip speed goes here */

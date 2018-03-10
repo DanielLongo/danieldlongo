@@ -9,6 +9,7 @@ removeHash()
 class Contact extends Component {
 	render() {
 		return(
+			<div className="indent">
 			<ScrollableAnchor id={"contact"}>
 			<div style={{marginBottom:"100%"}} className="mainView">
 				<h2> Let's Get in Touch </h2>
@@ -21,6 +22,7 @@ class Contact extends Component {
 				</div>
 			</div>
 			</ScrollableAnchor>
+			</div>
 		)
 	}
 }
