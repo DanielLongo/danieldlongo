@@ -4,7 +4,12 @@ import ScrollableAnchor from "react-scrollable-anchor"
 import { configureAnchors } from "react-scrollable-anchor"
 import {Button} from 'antd';
 import {Modal} from 'antd';
+import axios from 'axios'
 import AllProjects from "./allProjects"
+import HtmlComponent from "../components/htmlComponent"
+// import test from "../pages/projects/testProject.txt"
+
+
 configureAnchors({offset: -45, scrollDuration: 500})
 //project = {str projectName, str info,str(image adress) background,str url}
 const img = "https://images.unsplash.com/photo-1505283884983-cf47b9e0f9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c514001a3b6a6a18e6716dec11ad066&auto=format&fit=crop&w=1650&q=80"
@@ -38,6 +43,16 @@ img:"https://images.unsplash.com/photo-1508863702330-2eece3ea08cb?ixlib=rb-0.3.5
 
 const project8 = {projectName:"Project Name", info:"a breif description...", url:"#name",catagory:"catagory",img:img };
 
+
+// var html = "<p> This Works? </p>"
+// var MyComponent = React.createClass({
+// 	render: function() {
+// 		return React.createElement("h1", {
+// 			dangerouslySetInnerHTML: {__html: html}
+// 		})
+// 	}
+// })
+
 class Projects extends Component {
 	constrctor() {
 	}
@@ -45,6 +60,7 @@ class Projects extends Component {
 	state = {
 		projects : [project1, project2, project3,project4,project5,project6,project7,project8],
 		numCardsShow : 6,
+		externalFile: null,
 	}
 
 	componentWillMount() {
@@ -55,6 +71,7 @@ class Projects extends Component {
 		this.allProjectsModal = ""
 		console.log("cards here b:")
 		console.log(this.projectCards)
+		// console.log(test)
 	}
 
 	handleShowAll = () => {
@@ -68,6 +85,22 @@ class Projects extends Component {
 		this.showAll = x
 		this.forceUpdate()
 	}
+
+	getExternalFile(fileName) {
+		console.log("fetching external file")
+		const request = axios.get("../pages/projects/" + fileName).then (
+			response => {
+					this.setState({externalFile : response}, function() {
+						console.log("externalFile:")
+						console.log(this.state.externalFile)
+					})
+				}
+			).catch((error) => {
+				console.log("Error in getExternalFile")
+				console.log(error)
+			}) 
+	}
+
 	renderProjectCards() {
 		let projectCards =  (
 			<Row style={{marginLeft:"1%"}} type="flex" gutter={10}>
@@ -137,8 +170,18 @@ class Projects extends Component {
 	// 	return projectCards;
 	// }
 
+	renderStaticHTML() {
+		console.log("rendering static HTML...")
+		return (
+			<div dangerouslySetInnerHTML={this.getExternalFile("testProject.html")} />
+		)
+	}
 
 	render() {
+		// var __html = require("../pages/projects/testProject.html")
+		// var template = {__html: __html}
+		// var html = "<p>test test test </p>"
+
 		console.log("renders")
 		console.log(this.showAll)
 		if (this.showAll == true) {
@@ -155,6 +198,8 @@ class Projects extends Component {
 			{this.allProjectsModal}
 			<ScrollableAnchor id={"projects"}>
 			<div className="mainView">
+				{/*<div dangerouslySetInnerHTML={{__html: html}} />*/}
+				<HtmlComponent/>
 				<h2> Projects </h2>
 				{this.projectCards}
 			</div>
