@@ -235,3 +235,19 @@
 .back {
 	transform: rotateY(180deg);
 }
+
+.visualCard{
+    color: red;
+    /*SIZE HERE*/
+    width: 350px;
+    height: 300px;
+    margin-bottom: 10px;
+    /*width: 250px;*/
+    /*height: 200px;*/
+}
+
+.visualCardImage {
+  width: 349px;
+  max-height: 243px;
+  margin: 0 auto;
+}
