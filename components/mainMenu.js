@@ -14,11 +14,11 @@ class MainMenu extends Component {
 				<Menu
 				mode="horizontal"
 				>
-					<Menu.Item key="about"> <a href="#about">About</a></Menu.Item>
-					<Menu.Item class="mainMenuItem" key="projects"> <a href="#projects">Projects</a> </Menu.Item>
+					<Menu.Item key="about"> <a className="menuText" href="#about">About</a></Menu.Item>
+					<Menu.Item class="mainMenuItem" key="projects"> <a className="menuText" href="#projects">Projects</a> </Menu.Item>
 				{/* need to center Menu Items */}
-					<Menu.Item key="visuals"> <a href="#visuals">Visuals</a> </Menu.Item>
-					<Menu.Item key="contact"> <a href="#contact">Contact</a> </Menu.Item>
+					<Menu.Item key="visuals"> <a className="menuText" href="#visuals">Visuals</a> </Menu.Item>
+					<Menu.Item key="contact"> <a className="menuText" href="#contact">Contact</a> </Menu.Item>
 				</Menu>
 				</Anchor>
 			</div>
