@@ -30,7 +30,7 @@ class About extends Component {
 					Some languages I am most familiar with are: Python, R, C++, Javascript, and HTML & CSS.
 					</p>
 					<p>
-					Some tools I use are: R-Studio, Amazon EC2, Amazon S3, and Git.
+					Some tools I use are: tensorflow, Scikit Learn, React, R-Studio, Amazon EC2, Amazon S3, and Git.
 					</p>
 					<p>
 					Below are some of the projects and data visualizations I have been working on.
