@@ -4,7 +4,6 @@ import ScrollableAnchor from "react-scrollable-anchor"
 import { configureAnchors } from "react-scrollable-anchor"
 import {Button} from 'antd';
 import {Modal} from 'antd';
-import axios from 'axios'
 import AllProjects from "./allProjects"
 import HtmlComponent from "../components/htmlComponent"
 // import test from "../pages/projects/testProject.txt"
@@ -86,20 +85,20 @@ class Projects extends Component {
 		this.forceUpdate()
 	}
 
-	getExternalFile(fileName) {
-		console.log("fetching external file")
-		const request = axios.get("../pages/projects/" + fileName).then (
-			response => {
-					this.setState({externalFile : response}, function() {
-						console.log("externalFile:")
-						console.log(this.state.externalFile)
-					})
-				}
-			).catch((error) => {
-				console.log("Error in getExternalFile")
-				console.log(error)
-			}) 
-	}
+	// getExternalFile(fileName) {
+	// 	console.log("fetching external file")
+	// 	const request = axios.get("../pages/projects/" + fileName).then (
+	// 		response => {
+	// 				this.setState({externalFile : response}, function() {
+	// 					console.log("externalFile:")
+	// 					console.log(this.state.externalFile)
+	// 				})
+	// 			}
+	// 		).catch((error) => {
+	// 			console.log("Error in getExternalFile")
+	// 			console.log(error)
+	// 		}) 
+	// }
 
 	renderProjectCards() {
 		let projectCards =  (

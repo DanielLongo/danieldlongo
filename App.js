@@ -8,7 +8,7 @@ import { hotjar } from 'react-hotjar';
 // import "./views/canvaBackground.html"
 
 // npm install react-hotjar --save
-// npm install --save-dev html-loader
+//npm install react-html-parser
 //npm i webpack --save-dev
 
 class App extends Component {
