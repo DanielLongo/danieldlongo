@@ -19,21 +19,21 @@ class About extends Component {
 				}
 					<img ALIGN="right" HSPACE="50" VSPACE="0"className="aboutImage" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/37953_1651837181038_5714193_n.jpg?oh=0d300dedd15259f9bdbe4378bc836bd0&oe=5B388265"/>
 					<div className="lilIndent aboutText">
-					<p> My name is Daniel Longo and I am a freshman at Woodisde High School concurrently enrolled at Cañada Community college. 
+					<p> My name is <b> Daniel Longo </b> and I am a freshman at Woodisde High School concurrently enrolled at Cañada Community college. 
 					Outside of school I enjoy running cross country and playing on my school's golf team. 
 					</p>
 					<p>
-					I also enjoy coding, analyising data sets, and creating predictive models. 
-					Due to my interests in the financial sector, most of my projects use financial data.
+					I also like to code. In particular, I enjoy analyising data sets and creating machine learning models. 
+					Due to my interests in the financial sector, many of my projects below use financial data.
 					</p>
 					<p>
-					Some languages I am most familiar with are: Python, R, C++, Javascript, and HTML & CSS.
+					Some languages I am most familiar with are <b> Python, R, C++, Javascript, and HTML & CSS </b>
 					</p>
 					<p>
-					Some tools I use are: tensorflow, Scikit Learn, React, R-Studio, Amazon EC2, Amazon S3, and Git.
+					Some tools I use are <b> React, Tensorflow, R-Studio, Amazon EC2, Amazon S3, and Git </b>
 					</p>
 					<p>
-					Below are some of the projects and data visualizations I have been working on.
+					Below are some of the projects and data visualizations I have been working on
 					</p>
 					</div>
 				</div>

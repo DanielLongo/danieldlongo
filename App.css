@@ -16,19 +16,8 @@
 
 
 .fullscreen {
-	/*position: fixed;*/
-/*	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;*/
 	height: 100vh;
-	/*width: 100vh;*/
 	width: 100vw;
-	/*min-height: 100%;*/
-	/*max-width: 100%;*/
-	/*max-height: 100%;*/
-	/*margin: auto;*/
-	/*overflow: auto;*/
 }
 
 .mainMenuItem {
@@ -62,7 +51,9 @@
 }
 
 .nameText {
-	color: white;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .indent {
@@ -100,7 +91,7 @@
     margin-left:-25px;
     height:50px;
     width:50px;
-    /*background:red;*/
+    /* background:red; */
     -webkit-animation:bounce 1s infinite;
     -moz-animation:bounce 1s infinite;
     -o-animation:bounce 1s infinite;
@@ -160,7 +151,7 @@
   /*same width as projectCard*/
   /*width is one less than actual*/
   width: var(--project-card-image-width);
-  max-height: var(--project-card-image-height);  
+  height: var(--project-card-image-height);  
   /*max-height is 57 less than card height*/
   margin: 0 auto;
 
@@ -239,15 +230,15 @@
 .visualCard{
     color: red;
     /*SIZE HERE*/
-    width: 350px;
-    height: 300px;
-    margin-bottom: 10px;
+    width: var(--project-card-width);
+    height: var(--project-card-height);
+    /* margin-bottom: 10px; */
     /*width: 250px;*/
     /*height: 200px;*/
 }
 
 .visualCardImage {
-  width: 349px;
-  max-height: 243px;
+  width: var(--project-card-image-width - 20);
+  height: var(--project-card-image-height - 30);  
   margin: 0 auto;
 }

@@ -40,7 +40,13 @@ const project7 = {projectName:"Ticket Price Analysis",
 info:"Not quite an avid football fan I often sell my tickets season tickets on StubHub. In this project I collect ticket sales data and found when it is best to sell my ticket.", url:"#name",catagory:"Data Science",
 img:"https://images.unsplash.com/photo-1508863702330-2eece3ea08cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d89a6172238b6b42f6b9cd47a37c976&auto=format&fit=crop&w=500&q=60" };
 
-const project8 = {projectName:"Project Name", info:"a breif description...", url:"#name",catagory:"catagory",img:img };
+const project8 = {projectName:"Simple WebGL Game in Unity",
+info: "use a and d to slide right and left",
+url: "http://slidergame.s3-website-us-west-1.amazonaws.com/",
+img: "https://udemy-images.udemy.com/course/750x422/1210008_6859.jpg",
+catagory:"Other"}
+
+const project9 = {projectName:"Project Name", info:"a breif description...", url:"#name",catagory:"catagory",img:img };
 
 
 // var html = "<p> This Works? </p>"
@@ -58,7 +64,7 @@ class Projects extends Component {
 
 	state = {
 		projects : [project1, project2, project3,project4,project5,project6,project7,project8],
-		numCardsShow : 6,
+		numCardsShow : 7,
 		externalFile: null,
 	}
 
@@ -197,8 +203,6 @@ class Projects extends Component {
 			{this.allProjectsModal}
 			<ScrollableAnchor id={"projects"}>
 			<div className="mainView">
-				{/*<div dangerouslySetInnerHTML={{__html: html}} />*/}
-				<HtmlComponent/>
 				<h2> Projects </h2>
 				{this.projectCards}
 			</div>

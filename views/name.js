@@ -21,7 +21,7 @@ class Name extends Component {
 						<br/>
 						<a href="#about" className="nameArrow">
 							<div className="bounce">
-								<Icon type="down" />
+								<Icon style={{fontSize: 30, fontWeight: "bold" }} type="down" />
 							</div>
 						</a>
 					</div>
