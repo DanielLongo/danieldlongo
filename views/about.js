@@ -18,7 +18,7 @@ class About extends Component {
 					Outside of school I enjoy running cross country and playing on my school's golf team. 
 					</p>
 					<p>
-					I also like to code. In particular, I enjoy analyising data sets and creating machine learning models. 
+					I also like to code. In particular, I enjoy analyizing data sets and creating machine learning models. 
 					Due to my interests in the financial sector, many of my projects below use financial data.
 					</p>
 					<p>
