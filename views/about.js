@@ -11,12 +11,7 @@ class About extends Component {
 			<div className="indent">
 			<ScrollableAnchor id={"about"}>
 				<div className="mainView">
-					<h2> About </h2>
-					{
-					// <p className="lilIndent">
-					// Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas, nunc dictum maximus aliquet, ante magna ultricies nulla, non ultricies enim felis at turpis. Praesent congue molestie nunc, aliquam consectetur augue viverra a. Donec ultrices eu lectus vel laoreet. Phasellus ac mollis ex, eget bibendum augue. Pellentesque sem metus, lobortis vel ligula non, tempus ultricies urna. Pellentesque ut consectetur libero, vitae efficitur massa. Pellentesque a tempus enim. Fusce justo nibh, sodales id iaculis at, rhoncus ultrices lacus. Pellentesque nec nisl risus. Nulla facilisi. Morbi ex arcu, venenatis at felis vel, vestibulum mattis nibh. Nunc interdum suscipit dui sed faucibus. Suspendisse vel nunc quis elit facilisis eleifend eu sed justo. Quisque convallis, felis scelerisque vehicula fringilla, arcu mauris porttitor lorem, vitae tristique justo arcu a mi. Praesent non mi finibus, vulputate sem eu, ullamcorper dui. Integer ac imperdiet lacus, ut sollicitudin velit.
-					// </p>
-				}
+					<h1 className="sectionTitleText"> About </h1>
 					<img ALIGN="right" HSPACE="50" VSPACE="0"className="aboutImage" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/37953_1651837181038_5714193_n.jpg?oh=0d300dedd15259f9bdbe4378bc836bd0&oe=5B388265"/>
 					<div className="lilIndent aboutText">
 					<p> My name is <b> Daniel Longo </b> and I am a freshman at Woodisde High School concurrently enrolled at Cañada Community college. 

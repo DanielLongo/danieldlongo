@@ -52,7 +52,7 @@ class Visuals extends Component {
 			<div className="indent">
 			<ScrollableAnchor id={"visuals"}>
 			<div className="mainView">
-				<h2> Visuals </h2>
+				<h1 className="sectionTitleText"> Visuals </h1>
 				{this.visualsCards}
 			</div>
 			</ScrollableAnchor>

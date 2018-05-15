@@ -4,6 +4,7 @@ import About from "..//views/about.js"
 import Projects from "..//views/projects.js"
 import Visuals from "..//views/visuals.js"
 import Contact from "..//views/contact.js"
+import MyFooter from "..//views/footer.js"
 import MainMenu from "..//components/mainMenu.js"
 
 class MainPage extends Component {
@@ -17,6 +18,7 @@ class MainPage extends Component {
 				<Projects className="mainView"/>
 				<Visuals className="mainView"/>
 				<Contact className="mainView"/>
+				<MyFooter/>
 			</div>)
 	}
 }

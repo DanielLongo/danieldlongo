@@ -11,16 +11,9 @@ import { hotjar } from 'react-hotjar';
 //npm install react-html-parser
 //npm i webpack --save-dev
 
-class App extends Component {
+class App extends Component { 
   render() {
   	hotjar.initialize(798187, 6);
-
- //  	if (image.complete) {
-	//   start();
-	// } else {
-	//   image.onload = start;
-	// }
-
     return (
     <div>
      	<Home/>

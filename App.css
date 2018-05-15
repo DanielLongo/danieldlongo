@@ -52,8 +52,9 @@
 
 .nameText {
   color: white;
-  font-size: 30px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-size: 50px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  /* font-family: Chalkduster, fantasy */
 }
 
 .indent {
@@ -69,7 +70,7 @@
 	margin-bottom: 1.5%
 }
 
- /*https://answers.squarespace.com/questions/135958/how-can-i-create-a-bouncing-down-arrow.html*/
+/*https://answers.squarespace.com/questions/135958/how-can-i-create-a-bouncing-down-arrow.html*/
 
 .nameArrow {
 	/*height: 452vh; */
@@ -122,10 +123,13 @@
     50%      { bottom:15px; }
     100%     {bottom:30;}
   }
-
+.sectionTitleText {
+  font-family: Helvetica, sans-serif;
+}
   .menuText {
-    font-weight: 600;
-    font-size: 17px;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    font-weight: 500;
+    font-size: 20px;
   }
   .aboutImage {
     width: 400px;
@@ -241,4 +245,12 @@
   width: var(--project-card-image-width - 20);
   height: var(--project-card-image-height - 30);  
   margin: 0 auto;
+}
+
+.contactText {
+  font-size: 20px;
+}
+
+.contactIcon {
+  font-size: 25px;
 }

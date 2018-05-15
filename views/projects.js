@@ -203,7 +203,7 @@ class Projects extends Component {
 			{this.allProjectsModal}
 			<ScrollableAnchor id={"projects"}>
 			<div className="mainView">
-				<h2> Projects </h2>
+				<h1 className="sectionTitleText"> Projects </h1>
 				{this.projectCards}
 			</div>
 			</ScrollableAnchor>
