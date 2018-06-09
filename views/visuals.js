@@ -22,7 +22,7 @@ class Visuals extends Component {
 	renderVisuals() {
 		let visuals = (
 			<div>
-			<Row style={{marginLeft:"1%"}} type="flex" gutter={10}>
+			<Row type="flex" gutter={10}>
 			{this.state.visuals.map((visual,index) => {
 				let cur_title = visual["title"]
 				let cur_img = visual["img"]

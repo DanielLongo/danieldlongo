@@ -22,10 +22,10 @@ class About extends Component {
 					Due to my interests in the financial sector, many of my projects below use financial data.
 					</p>
 					<p>
-					Some languages I am most familiar with are <b> Python, R, C++, Javascript, and HTML & CSS </b>
+					Some languages I am most familiar with are <b> Python, R, C++, Javascript, and HTML & CSS</b>.
 					</p>
 					<p>
-					Some tools I use are <b> React, Tensorflow, R-Studio, Amazon EC2, Amazon S3, and Git </b>
+					Some tools I use are <b> React, Tensorflow, R-Studio, Amazon EC2, Amazon S3, and Git</b>.
 					</p>
 					<p>
 					Below are some of the projects and data visualizations I have been working on

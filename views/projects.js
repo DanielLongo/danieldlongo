@@ -18,31 +18,31 @@ info:"Logistic regression using only numpy to identify cows.", url:"projects/Log
 "https://images.unsplash.com/photo-1502590464431-3b66d77494d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=464528617b90a6f30c1cbcd6db84d90b&auto=format&fit=crop&w=667&q=80"};
 
 const project2 = {projectName:"Neural Net from Scratch", 
-info:"A vanilla nerual net built entirely form scratch", url:"projects/NN.html",catagory:"Deep Learning",
+info:"A vanilla neural net built entirely from scratch.", url:"projects/NN.html",catagory:"Deep Learning",
 img:img };
 
 const project3 = {projectName:"CNN from Scratch", 
-info:"A CNN built from numpy that classifies the type of leaf", url:"#projects",catagory:"Deep Learning",
+info:"A CNN built to classify images better than logistic regression models or standard vanilla neural nets. Built entirely from scratch.", url:"#projects",catagory:"Deep Learning",
 img:"https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba9893452f120b4af8ffe3b3f9475e7f&auto=format&fit=crop&w=750&q=80" };
 
 const project4 = {projectName:"RNN Cryptocurrencey Predictor", 
-info:"A RNN built using tensorflow that relates cryptocurrencey and predicts how they will move in the future", url:"#projects",catagory:"Deep Learning",
+info:"A RNN built using tensorflow that relates cryptocurrency prices and predicts how they will move in the future.", url:"#projects",catagory:"Deep Learning",
 img:"https://images.unsplash.com/photo-1519995451813-39e29e054914?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c0478ad15d7b018f8bb59f644f17184&auto=format&fit=crop&w=750&q=80" };
 
 const project5 = {projectName:"Lidar Object Detection", 
-info:"A CNN built using keras that identifies obsticles in a field using lidar data", url:"#projects",catagory:"Deep Learning",
+info:"A CNN built using keras that identifies obstacles in a field using lidar data.", url:"#projects",catagory:"Deep Learning",
 img:"http://scanse.io/sites/default/files/product/image/FRONT.JPG" };
 
 const project6 = {projectName:"Image Collector", 
-info:"A simple scraper that downloads images using json data from imagenet. Used to accumulate image data for other projects", url:"#projects",catagory:"Web Scraping",
+info:"A simple scraper that downloads images using json data from imagenet. Used to accumulate image data for other projects.", url:"#projects",catagory:"Web Scraping",
 img:"https://patrykchrabaszcz.github.io/assets/img/Imagenet32/64x64.png" };
 
 const project7 = {projectName:"Ticket Price Analysis", 
-info:"Not quite an avid football fan I often sell my tickets season tickets on StubHub. In this project I collect ticket sales data and found when it is best to sell my ticket.", url:"#projects",catagory:"Data Science",
+info:"Not quite an avid football fan, I often sell my season tickets on StubHub. In this project, I collect ticket sales data and found when it is best to sell my ticket.", url:"#projects",catagory:"Data Science",
 img:"https://images.unsplash.com/photo-1508863702330-2eece3ea08cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d89a6172238b6b42f6b9cd47a37c976&auto=format&fit=crop&w=500&q=60" };
 
 const project8 = {projectName:"Simple WebGL Game in Unity",
-info: "use a and d to slide right and left",
+info: "Use a and d to slide right and left. Avoid the cubes!",
 url: "http://slidergame.s3-website-us-west-1.amazonaws.com/",
 img: "https://udemy-images.udemy.com/course/750x422/1210008_6859.jpg",
 catagory:"Other"}
@@ -124,7 +124,7 @@ class Projects extends Component {
 
 	renderProjectCards() {
 		let projectCards =  (
-			<Row style={{marginLeft:"1%"}} type="flex" gutter={10}>
+			<Row type="flex" gutter={10}>
 				{this.state.projects.map((project, index) => {
 					let cur_projectName = project["projectName"]
 					let cur_info = project["info"];
