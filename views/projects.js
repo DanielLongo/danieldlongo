@@ -13,6 +13,35 @@ import { message} from 'antd';
 configureAnchors({offset: -45, scrollDuration: 500})
 //project = {str projectName, str info,str(image adress) background,str url}
 const img = "https://images.unsplash.com/photo-1505283884983-cf47b9e0f9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c514001a3b6a6a18e6716dec11ad066&auto=format&fit=crop&w=1650&q=80"
+const projectA = {projectName: "GANs for EEGs", url:"https://github.com/DanielLongo/eegML", catagory:"Deep Learning",
+	img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/35s_SWK_REM.png/1280px-35s_SWK_REM.png",
+	info:"Recurrent, conlvolutional, and progressive GANs for the generation of EEGs while working to incorporate physics based models with the GAN."
+}
+
+const projectB = {projectName:"Contract Reader", url:"https://github.com/DanielLongo/ContractsReader", catagory:"NLP",
+	img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/National_Proletarian_Doctrine.pdf/page1-93px-National_Proletarian_Doctrine.pdf.jpg",
+	info: "Programs to read startup contracts in order to track corporate governance and shareholder rights."
+}
+
+const projectC = {projectName:"Call Wall", url:"http://callwall.s3-website-us-west-1.amazonaws.com/", catagory:"Mobile App",
+	img:"call wall.png",
+	info: "A mobile application that blocks spam phone calls. The app checks if a phone number is spoofed through call APIs and references all incoming numbers with scraped scam phone number records."
+}
+
+const projectD = {projectName:"Transfer Learning cDCGANs", url:"https://github.com/DanielLongo/cGANs", catagory:"Deep Learning",
+	img:"https://github.com/DanielLongo/cGANs/raw/master/generated_images/0-20.gif",
+	info: "Transfering learning implemented in conditional DCGANs."
+}
+
+const projectE = {projectName:"cs231n Assignments", url:"https://github.com/DanielLongo/cs231n", catagory:"Computer Vision",
+	img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/3_filters_in_a_Convolutional_Neural_Network.gif/800px-3_filters_in_a_Convolutional_Neural_Network.gif",
+	info:"Stanford cs231n assignments completed with PyTorch, Tensorflow, and numpy."
+}
+
+const projectF = {projectName:"CapsuleGAN", url:"https://github.com/DanielLongo/CapsGAN", catagory:"Deep Learning",
+	img:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/MnistExamples.png/120px-MnistExamples.png",
+	info:"A Generative Adversarial Network with a Capsule Based (Hinton et al.) discriminator"
+}
 const project1 = {projectName:"Logistic Regression from Scratch", 
 info:"Logistic regression using only numpy to identify cows.", url:"projects/Logistic_Regression_Model-notes.html",catagory:"ML" ,img:
 "https://images.unsplash.com/photo-1502590464431-3b66d77494d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=464528617b90a6f30c1cbcd6db84d90b&auto=format&fit=crop&w=667&q=80"};
@@ -26,20 +55,17 @@ info:"A CNN built to classify images better than logistic regression models or s
 img:"https://images.unsplash.com/photo-1459478309853-2c33a60058e7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba9893452f120b4af8ffe3b3f9475e7f&auto=format&fit=crop&w=750&q=80" };
 
 const project4 = {projectName:"RNN Cryptocurrencey Predictor", 
-info:"A RNN built using tensorflow that relates cryptocurrency prices and predicts how they will move in the future.", url:"#projects",catagory:"Deep Learning",
+info:"A RNN built using tensorflow that relates cryptocurrency prices and predicts how they will move in the future.", url:"https://github.com/DanielLongo/CryptoRnn",catagory:"Deep Learning",
 img:"https://images.unsplash.com/photo-1519995451813-39e29e054914?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c0478ad15d7b018f8bb59f644f17184&auto=format&fit=crop&w=750&q=80" };
 
 const project5 = {projectName:"Lidar Object Detection", 
 info:"A CNN built using keras that identifies obstacles in a field using lidar data.", url:"#projects",catagory:"Deep Learning",
-img:"http://scanse.io/sites/default/files/product/image/FRONT.JPG" };
+img:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Airborne_Lidar_Bathymetric_Technology.jpg/120px-Airborne_Lidar_Bathymetric_Technology.jpg" };
 
 const project6 = {projectName:"Image Collector", 
 info:"A simple scraper that downloads images using json data from imagenet. Used to accumulate image data for other projects.", url:"#projects",catagory:"Web Scraping",
 img:"https://patrykchrabaszcz.github.io/assets/img/Imagenet32/64x64.png" };
 
-const project7 = {projectName:"Ticket Price Analysis", 
-info:"Not quite an avid football fan, I often sell my season tickets on StubHub. In this project, I collect ticket sales data and found when it is best to sell my ticket.", url:"#projects",catagory:"Data Science",
-img:"https://images.unsplash.com/photo-1508863702330-2eece3ea08cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d89a6172238b6b42f6b9cd47a37c976&auto=format&fit=crop&w=500&q=60" };
 
 const project8 = {projectName:"Simple WebGL Game in Unity",
 info: "Use a and d to slide right and left. Avoid the cubes!",
@@ -64,8 +90,8 @@ class Projects extends Component {
 	}
 
 	state = {
-		projects : [project1, project2, project3,project4,project5,project6,project7,project8],
-		numCardsShow : 7,
+		projects : [projectA, projectB, projectE, projectC, projectD, projectF, project1, project2,project4,project5,project6,project8],
+		numCardsShow : 9,
 		externalFile: null,
 	}
 
@@ -161,7 +187,7 @@ class Projects extends Component {
 					);
 				})}
 				<Card className="projectCard">
-					<Button type="danger" onClick={this.handleShowAll}>See All</Button>
+					<Button type="danger" onClick={this.handleShowAll} size={"Large"}>See All</Button>
 				</Card>
 			</Row>
 		)

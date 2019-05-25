@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Icon} from 'antd';
+import {Button, Icon} from 'antd';
 import '../App.css'
 import ScrollableAnchor from "react-scrollable-anchor"
 import { configureAnchors } from "react-scrollable-anchor"
@@ -20,6 +20,12 @@ class Contact extends Component {
 					<Icon className="contactIcon" type="mobile" /><a className="contactText" href="tel:+1-650-546-1126"> 650-546-1126</a>
 					<p/>
 					<Icon className="contactIcon" type="global" /><a className="contactText" href="https://www.google.com/maps/place/Menlo+Park/@37.4541977,-122.1841374,17z/data=!3m1!4b1!4m5!3m4!1s0x808fa4ae453a8637:0xa0d39978eada388a!8m2!3d37.4541935!4d-122.1819487"> Menlo Park, CA, USA</a>
+					<p/>
+					<a href="Resume (1).pdf" download="DanielLongo">
+						<Button type="primary" icon="download" size={"Large"}>
+							Download Resume
+						</Button>
+					</a>
 				</div>
 			</div>
 			</ScrollableAnchor>

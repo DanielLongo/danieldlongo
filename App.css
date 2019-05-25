@@ -17,7 +17,7 @@
 
 
 .fullscreen {
-	height: 100vh;
+	height: 90vh;
 	width: 100vw;
 }
 
@@ -47,7 +47,8 @@
   color: black;
   margin-top: -30%;
   font-size: 50px;
-  font-family: var(--text-font);
+  /*font-family: var(--text-font);*/
+    font-family: Apple Chancery;
   /* font-family: Chalkduster, fantasy */
 }
 

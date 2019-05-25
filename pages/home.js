@@ -16,7 +16,7 @@ class MainPage extends Component {
 				<MainMenu/>
 				<About/>
 				<Projects className="mainView"/>
-				<Visuals className="mainView"/>
+				{/*<Visuals className="mainView"/>*/}
 				<Contact className="mainView"/>
 				<MyFooter/>
 			</div>)
